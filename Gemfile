@@ -38,6 +38,14 @@ gem 'soap4r', '~> 1.5.8'
 # heroku deps
 gem 'rails_12factor', group: :production
 
+# exact target fuelsdk lib
+gem 'fuelsdk'
+
+gem 'savon', '~> 2.2.0'
+
+gem 'json'
+
+
 #ruby version
 ruby "2.0.0"
 
