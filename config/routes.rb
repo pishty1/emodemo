@@ -12,6 +12,7 @@ Myapp::Application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   resources :posts
+  resources :lists
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 

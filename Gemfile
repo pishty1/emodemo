@@ -45,6 +45,9 @@ gem 'savon', '~> 2.2.0'
 
 gem 'json'
 
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
 
 #ruby version
 ruby "2.0.0"

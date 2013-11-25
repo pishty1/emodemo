@@ -9,12 +9,20 @@
 <div class="page-header" id="banner">
 	<div class="row">
 	  <div class="col-lg-6">
-	    <h1>Emocial Demo</h1>
-	    <p class="lead">Creating lists</p>
+	    <h1>New List</h1>
+	    <p class="lead">Enter and create a new list</p>
 	  </div>
 	  <div class="col-lg-6" style="padding: 15px 15px 0 15px;">
 	    <div class="well">
-      		<%= link_to "start creating lists", controller: "lists", action: "new" %>
+      		<%= form_for :list, url: lists_path  do |f| %>
+				<p>
+			    	<%= f.label 'list name' %><br>
+			    	<%= f.text_field :listname %>
+		  		</p>
+		  		<p>
+		    		<%= f.submit %>
+		  		</p>
+			<% end %>
 	    </div>
 	  </div>
 	</div>
