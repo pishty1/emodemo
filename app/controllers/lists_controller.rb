@@ -7,7 +7,7 @@ class ListsController < ApplicationController
 	def create
 		
 		begin
-			stubObj = ET_Client.new({'client' => {'id' => 'xk9aah4hx8ugxtryc656mxc3','secret' => 'chweMfqfb94sgTTbjWEQaXxw'}})
+			stubObj = ET_Client.new({'client' => {'id' => 'xxxxxxxxx','secret' => 'yyyyyyyyyyy'}})
 			@list = List.new(params.require(:list).permit(:listname))
 			@NewListName = @list.listname
 
